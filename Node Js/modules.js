@@ -10,14 +10,20 @@ console.log(os.arch());      // Prints the architecture of the operating system
 console.log(os.hostname());  // Prints the hostname of the operating system
 console.log(os.cpus());      // Prints the CPU information of the operating system
 */
-
+/*
 // Global Objects:
 // Note: Global objects are available everywhere in Node.js without the need to require them and import them.
 // Example:
 console.log("abc");
 console.log(process.cwd());  // Prints the current path of the working directory
 console.log(process.pid);  // Prints the process ID of the current process
+*/
 
+// Dummy.txt file code:
+/*
+This is an example file created using fs module.
+*/
 
 //Note: The difference between core modules and global objects is that core modules need to be imported using require() function before they can be used,
+
 //  whereas global objects are available by default without any import.
