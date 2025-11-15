@@ -14,3 +14,13 @@ console.log(data);
 // var b = 3;
 // console.log(a+b);
 
+
+// Data.js file code:
+/*
+export let userName = "Umair Sajawal";
+*/
+
+//umair.txt file code:
+/*
+Hello I am Umair
+*/
