@@ -28,12 +28,13 @@ http.createServer((req, resp) => {
                 // Converts the raw data into readable format
                 const readableData = querystring.parse(rawData)
                 console.log(readableData);
-                resp.write("<h1>Form Submitted Successfully</h1>");
+                resp.write(`
+                    <h1>Form Submitted Successfully</h1>
+                    <p>Name:${readableData.name}</p>
+                    <p>Email: ${readableData.email}</p>
+                    `);
 
-                // Display form data on browser
-                for (let key in readableData) {
-                    resp.write(`<p> ${key} : ${readableData[key]} </p>`);
-                }
+                
 
                 resp.end();
             });
@@ -41,7 +42,7 @@ http.createServer((req, resp) => {
         }
         
     })
-}).listen(3300)
+}).listen(3100)
 
 
 
